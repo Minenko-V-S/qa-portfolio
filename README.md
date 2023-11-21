@@ -4479,5 +4479,5 @@ ORDER BY
 
 
 
-[Виталий Миненко]((https://github.com/Minenko-V-S?tab=repositories)https://github.com/Minenko-V-S?tab=repositories), 2023
+[Виталий Миненко](https://github.com/Minenko-V-S?tab=repositories)https://github.com/Minenko-V-S?tab=repositories), 2023
 
