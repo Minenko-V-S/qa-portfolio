@@ -1,0 +1,59 @@
+package test.service;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import service.CalculatorService;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class CalculatorServiceTest {
+    private CalculatorService calc;
+
+    @BeforeEach
+    void setUp() {
+        calc = new CalculatorService();
+    }
+
+    @Test
+    void add() {
+        int num1 = 10;
+        int num2 = 10;
+        int result = num1 + num2;
+        assertEquals(20, result);
+    }
+
+    @Test
+    void subtract() {
+        int num1 = 50;
+        int num2 = 10;
+        double result = num1 - num2;
+        assertEquals(40, result);
+    }
+
+    @Test
+    void multiply() {
+        int num1 = 50;
+        int num2 = 10;
+        double result = num1 * num2;
+        assertEquals(500, result);
+    }
+
+    @Test
+    void divide() {
+        int num1 = 50;
+        int num2 = 10;
+        double result = num1 / num2;
+        assertEquals(5.0, result);
+
+    }
+
+    @Test
+    void divide_byZero() {
+        Assertions.assertThrows(ArithmeticException.class, () -> {
+            int num1 = 10;
+            int num2 = 0;
+            double result = num1 / num2;
+        });
+    }
+}
